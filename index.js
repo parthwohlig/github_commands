@@ -8,6 +8,9 @@ app.get('/',(req,res)=>{
     res.send('This is Express Server')
 })
 
+app.post('/user',(req,res) =>{
+    res.json({user})
+})
 app.listen(8081, () =>{
     console.log('Server running on 8081')
 })

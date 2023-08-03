@@ -1,0 +1,73 @@
+BASIC COMMANDS
+git init: Initializes a new Git repository in the current directory.
+
+git clone <repository-url>: Copies an existing repository from a remote server (like GitHub) to your local machine.
+
+git add <file>: Stages changes of a specific file to be included in the next commit.
+
+git add .: Stages all changes in the current directory and its subdirectories to be included in the next commit.
+
+git commit -m "commit message": Creates a new commit with the staged changes along with a descriptive commit message.
+
+git status: Shows the current status of your working directory, including staged and unstaged changes.
+
+git log: Displays the commit history with details like author, date, and commit messages.
+
+git pull: Fetches and merges changes from the remote repository into your local branch.
+
+git push: Pushes the committed changes from your local branch to the remote repository.
+
+git branch: Lists all the branches in the repository, with an asterisk (*) indicating the current branch.
+
+git branch <branch-name>: Creates a new branch with the given name.
+
+git checkout <branch-name>: Switches to the specified branch.
+
+git merge <branch-name>: Merges the changes from the specified branch into the current branch.
+
+git remote: Lists all remote repositories connected to your local repository.
+
+git remote add <name> <url>: Adds a new remote repository with the given name and URL.
+
+git remote remove <name>: Removes a previously added remote repository.
+
+git diff: Shows the differences between the working directory and the last commit.
+
+git stash: Temporarily stores your local changes in a stash, allowing you to switch branches without committing them.
+
+git reset <file>: Unstages changes of a specific file from the staging area.
+
+git reset --hard: Resets the working directory to the last committed state, discarding all changes.
+
+
+
+
+
+ADVANCED COMMANDS
+git cherry-pick <commit>: Allows you to pick a specific commit from one branch and apply it to another branch. Useful for applying individual commits selectively.
+
+git rebase: Allows you to rewrite the commit history by moving or combining commits, making it easier to maintain a cleaner and more organized history.
+
+git reflog: Displays a log of all the git actions you've performed, including resets, checkouts, and commits. Useful for undoing changes or recovering lost commits.
+
+git bisect: Helps you perform a binary search through the commit history to find the commit that introduced a bug or regression.
+
+git tag: Allows you to create, list, and manage tags, which are useful for marking important points in the commit history, such as releases.
+
+git submodule: Manages external dependencies as Git submodules, allowing you to integrate other repositories into your project.
+
+git remote update: Updates the remote-tracking branches for all remote repositories. Helpful to ensure that your local repository is up-to-date with changes from the remote.
+
+git rebase -i: Interactive rebase, which enables you to interactively squash, edit, re-order, or drop commits during the rebase process.
+
+git clean: Removes untracked files and directories from your working directory. Useful for cleaning up your workspace.
+
+git revert: Creates a new commit that undoes the changes introduced by a previous commit. Unlike git reset, this method preserves the commit history.
+
+git log --graph: Displays the commit history in a graph structure, making it easier to visualize branching and merging.
+
+git stash apply: Applies the changes stored in a stash back to the working directory.
+
+git cherry: Lists commits that have not been applied to the upstream branch. Useful for identifying pending changes to be sent for review.
+
+git bisect start: Initiates a binary search to find a problematic commit, with the help of scriptable testing commands to determine whether a specific commit is good or bad.
